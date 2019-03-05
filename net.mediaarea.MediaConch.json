@@ -1,7 +1,7 @@
 {
   "app-id": "net.mediaarea.MediaConch",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.9",
+  "runtime-version": "5.12",
   "sdk": "org.kde.Sdk",
   "command": "mediaconch-gui",
   "rename-desktop-file": "mediaconch-gui.desktop",
