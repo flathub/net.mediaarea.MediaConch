@@ -78,6 +78,11 @@
         {
             "type": "file",
             "path": "net.mediaarea.MediaConch.appdata.xml"
+        },
+        {
+            "type": "patch",
+            "path": "fix_qt_5_10.patch",
+            "options": [ "--binary" ]
         }
       ],
       "post-install": [
