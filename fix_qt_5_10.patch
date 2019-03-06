@@ -1,0 +1,26 @@
+﻿*** a/Source/GUI/Qt/WebEnginePage.cpp	2018-03-20 00:43:58.000000000 +0100
+--- b/Source/GUI/Qt/WebEnginePage.cpp	2019-03-05 23:53:59.228342898 +0100
+***************
+*** 32,40 ****
+      {
+      }
+  
+!     bool WebPage::acceptNavigationRequest(const QUrl&, QWebEnginePage::NavigationType,
+                                            bool)
+      {
+          return false;
+      }
+  
+--- 32,43 ----
+      {
+      }
+  
+!     bool WebPage::acceptNavigationRequest(const QUrl&, QWebEnginePage::NavigationType type,
+                                            bool)
+      {
++         if (type == QWebEnginePage::NavigationTypeTyped)
++             return true;
++ 
+          return false;
+      }
+  
