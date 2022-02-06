@@ -1,10 +1,10 @@
 {
   "app-id": "net.mediaarea.MediaConch",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.15",
+  "runtime-version": "5.15-21.08",
   "sdk": "org.kde.Sdk",
   "base": "io.qt.qtwebengine.BaseApp",
-  "base-version": "5.15",
+  "base-version": "5.15-21.08",
   "command": "mediaconch-gui",
   "rename-desktop-file": "mediaconch-gui.desktop",
   "rename-icon": "mediaconch",
@@ -72,9 +72,17 @@
       "subdir": "Project/Qt",
       "buildsystem": "qmake",
       "build-options": {
-        "env": "QMAKEPATH=/app/lib"
-       },
-      "config-opts": [ "QMAKE_INCDIR+=/app/include/QtWebEngine", "QMAKE_INCDIR+=/app/include/QtWebEngineCore", "QMAKE_INCDIR+=/app/include/QtWebEngineWidgets", "-after", "target.path=/app/bin" ],
+          "env": {
+              "QMAKEPATH": "/app/lib"
+          }
+      },
+      "config-opts": [
+          "QMAKE_INCDIR+=/app/include/QtWebEngine",
+          "QMAKE_INCDIR+=/app/include/QtWebEngineCore",
+          "QMAKE_INCDIR+=/app/include/QtWebEngineWidgets",
+          "-after",
+          "target.path=/app/bin"
+      ],
       "sources": [
         {
           "type": "archive",
