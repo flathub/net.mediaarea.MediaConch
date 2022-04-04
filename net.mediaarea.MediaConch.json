@@ -46,13 +46,13 @@
       "subdir": "Project/GNU/Library",
       "config-opts": [ "--enable-shared", "--disable-static" ],
       "cleanup": [ "/bin", "/include", "/lib/pkgconfig", "/lib/*.la" ],
-       "sources": [
-         {
-           "type": "archive",
-           "url": "https://mediaarea.net/download/source/libzen/0.4.37/libzen_0.4.37.tar.xz",
-           "sha256": "38c0a68b715b55d6685d2759eecda040adf37bd066955d79a5d01f91977bd9a0"
-         }
-       ]
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://mediaarea.net/download/source/libzen/0.4.39/libzen_0.4.39.tar.xz",
+          "sha256": "cded5d7774294e7d5b42768ceb285243709b6e99eec6e980a3cf7f0890dbb622"
+        }
+      ]
     },
     {
       "name": "libmediainfo",
@@ -62,8 +62,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://mediaarea.net/download/source/libmediainfo/18.03/libmediainfo_18.03.tar.xz",
-          "sha256": "fb451233bea6bdf188ef76f237e02e907ef632b85a166e44d60e559d66c49fb4"
+          "url": "https://mediaarea.net/download/source/libmediainfo/22.03/libmediainfo_22.03.tar.xz",
+          "sha256": "fc50babb628e9cfba655288dae06d5c342b0d7e6941a32d64fbbb113248c80b9"
         }
       ]
     },
@@ -86,17 +86,12 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://mediaarea.net/download/source/mediaconch/18.03/mediaconch_18.03.tar.xz",
-          "sha256": "a5a5d958e7b562a329387e67684588a4c0a8b036f1b758e956a1c9d9b5a56fe5"
+          "url": "https://mediaarea.net/download/source/mediaconch/22.03/mediaconch_22.03.tar.xz",
+          "sha256": "0a6350a96e9add5812b7c172df351e4a9491b8af5bf01cb07bc8b5d48ee92700"
         },
         {
             "type": "file",
             "path": "net.mediaarea.MediaConch.appdata.xml"
-        },
-        {
-            "type": "patch",
-            "path": "fix_qt_5_10.patch",
-            "options": [ "--binary" ]
         }
       ],
       "post-install": [
