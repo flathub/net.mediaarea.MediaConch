@@ -23,7 +23,7 @@
   </keywords>
   <screenshots>
     <screenshot type="default">
-      <image>https://mediaarea.net/images/d3baf17-160b376.png</image>
+      <image>https://mediaarea.net/images/d3baf17-dcf2321.png</image>
     </screenshot>
   </screenshots>
   <content_rating type="oars-1.0">
@@ -55,6 +55,6 @@
   <update_contact>info@mediaarea.net</update_contact>
   <developer_name>MediaArea.net SARL</developer_name>
   <releases>
-    <release version="22.03" date="2022-03-31" />
+    <release version="22.09" date="2022-10-04" />
   </releases>
 </component>
