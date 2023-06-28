@@ -49,8 +49,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://mediaarea.net/download/source/libzen/0.4.40/libzen_0.4.40.tar.xz",
-          "sha256": "0c2e1c7302b3ee260d34b52e4b16ab655bdf021db8c14653e418aced46eb24a7"
+          "url": "https://mediaarea.net/download/source/libzen/0.4.41/libzen_0.4.41.tar.xz",
+          "sha256": "933bad3b7ecd29dc6bdc88a83645c83dfd098c15b0b90d6177a37fa1536704e8"
         }
       ]
     },
@@ -62,8 +62,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://mediaarea.net/download/source/libmediainfo/23.03/libmediainfo_23.03.tar.xz",
-          "sha256": "f57afffd76c6f9569ceb1e778fce834508eb0289bdeb62181143804aa3a6c098"
+          "url": "https://mediaarea.net/download/source/libmediainfo/23.06/libmediainfo_23.06.tar.xz",
+          "sha256": "c6b1ae8b2bbcf403340518b3c94f2ae75c8eb00682bfbbd18b22442e42dccfcd"
         }
       ]
     },
@@ -86,8 +86,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://mediaarea.net/download/source/mediaconch/23.03/mediaconch_23.03.tar.xz",
-          "sha256": "21b499ca44cd23a739860bcf070649c1cb4c014f2c0b5b43c502822c0cbbc972"
+          "url": "https://mediaarea.net/download/source/mediaconch/23.06/mediaconch_23.06.tar.xz",
+          "sha256": "844dba303e6bcc3a8ff1b0e7d9933a3d516edf38dd51b8ea2cffaf6bf409a6e2"
         },
         {
             "type": "file",
