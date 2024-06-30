@@ -2,6 +2,7 @@
 <!-- Copyright 2016-2018 MediaArea.net <info@mediaarea.net> -->
 <component type="desktop">
   <id type="desktop">net.mediaarea.MediaConch.desktop</id>
+  <launchable type="desktop-id">net.mediaarea.MediaConch.desktop</launchable>
   <metadata_license>CC0</metadata_license>
   <project_license>MPL-2.0 OR GPL-3.0+</project_license>
   <name>MediaConch</name>
@@ -55,6 +56,6 @@
   <update_contact>info@mediaarea.net</update_contact>
   <developer_name>MediaArea.net SARL</developer_name>
   <releases>
-    <release version="23.07" date="2023-07-12" />
+    <release version="24.06" date="2024-06-29" />
   </releases>
 </component>

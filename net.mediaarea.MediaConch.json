@@ -1,10 +1,10 @@
 {
   "app-id": "net.mediaarea.MediaConch",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.15-22.08",
+  "runtime-version": "5.15-23.08",
   "sdk": "org.kde.Sdk",
   "base": "io.qt.qtwebengine.BaseApp",
-  "base-version": "5.15-22.08",
+  "base-version": "5.15-23.08",
   "command": "mediaconch-gui",
   "rename-desktop-file": "mediaconch-gui.desktop",
   "rename-icon": "mediaconch",
@@ -24,7 +24,7 @@
         {
           "type": "git",
           "url": "https://github.com/libevent/libevent",
-          "tag": "release-2.1.8-stable"
+          "tag": "release-2.1.12-stable"
         }
       ]
     },
@@ -62,8 +62,19 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://mediaarea.net/download/source/libmediainfo/23.07/libmediainfo_23.07.tar.xz",
-          "sha256": "60456c8b2ab8769a6081d96fd7be86db4fe32520e4a022397cb22cacf47ce820"
+          "url": "https://mediaarea.net/download/source/libmediainfo/24.06/libmediainfo_24.06.tar.xz",
+          "sha256": "0683f28a2475dc2417205ba528debccc407da4d9fa6516eb4b75b3ff7244e96e"
+        }
+      ]
+    },
+    {
+      "name": "mediaconch",
+      "subdir": "Project/GNU/CLI",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://mediaarea.net/download/source/mediaconch/24.06/mediaconch_24.06.tar.xz",
+          "sha256": "cafc541e74aa1eff4aa973db547b7688ca62e7a6a954fee3ca244fdc6f22e21d"
         }
       ]
     },
@@ -86,8 +97,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://mediaarea.net/download/source/mediaconch/23.07/mediaconch_23.07.tar.xz",
-          "sha256": "ca95369b4a4b31c1bbfb8ed4dacb32b3f163e3d2f5d94d60231b0a43babd5266"
+          "url": "https://mediaarea.net/download/source/mediaconch/24.06/mediaconch_24.06.tar.xz",
+          "sha256": "cafc541e74aa1eff4aa973db547b7688ca62e7a6a954fee3ca244fdc6f22e21d"
         },
         {
             "type": "file",
