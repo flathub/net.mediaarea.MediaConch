@@ -1,25 +1,38 @@
 {
   "app-id": "net.mediaarea.MediaConch",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.15-23.08",
+  "runtime-version": "5.15-25.08",
   "sdk": "org.kde.Sdk",
   "base": "io.qt.qtwebengine.BaseApp",
-  "base-version": "5.15-23.08",
+  "base-version": "5.15-25.08",
   "command": "mediaconch-gui",
   "rename-desktop-file": "mediaconch-gui.desktop",
   "rename-icon": "mediaconch",
-  "finish-args": [ "--filesystem=host",
-                   "--device=dri",
-                   "--share=network",
-                   "--socket=wayland",
-                   "--socket=x11",
-                   "--share=ipc",
-                   "--env=QTWEBENGINEPROCESS_PATH=/app/bin/QtWebEngineProcess" ],
+  "finish-args": [
+    "--filesystem=host",
+    "--device=dri",
+    "--share=network",
+    "--socket=wayland",
+    "--socket=x11",
+    "--share=ipc",
+    "--env=QTWEBENGINEPROCESS_PATH=/app/bin/QtWebEngineProcess"
+  ],
+  "cleanup": [
+    "/include",
+    "/lib/pkgconfig",
+    "*.la",
+    "*.a"
+  ],
+  "cleanup-commands": [
+      "/app/cleanup-BaseApp.sh"
+  ],
   "modules": [
     {
       "name": "libevent",
-      "config-opts": [ "--enable-shared", "--disable-static" ],
-      "cleanup": [ "/bin", "/include", "/lib/pkgconfig" ],
+      "config-opts": [
+        "--enable-shared",
+        "--disable-static"
+      ],
       "sources": [
         {
           "type": "git",
@@ -30,22 +43,31 @@
     },
     {
       "name": "jansson",
-      "config-opts": [ "--enable-shared", "--disable-static" ],
-      "cleanup": [ "/include", "/lib/pkgconfig" ],
+      "config-opts": [
+        "--enable-shared",
+        "--disable-static"
+      ],
       "sources": [
         {
           "type": "archive",
           "url": "http://www.digip.org/jansson/releases/jansson-2.10.tar.bz2",
           "sha256": "241125a55f739cd713808c4e0089986b8c3da746da8b384952912ad659fa2f5a"
         },
-        { "type": "script", "commands": [ "autoreconf --force --install" ] }
+        {
+          "type": "script",
+          "commands": [
+            "autoreconf --force --install"
+          ]
+        }
       ]
     },
     {
       "name": "libzen",
       "subdir": "Project/GNU/Library",
-      "config-opts": [ "--enable-shared", "--disable-static" ],
-      "cleanup": [ "/bin", "/include", "/lib/pkgconfig", "/lib/*.la" ],
+      "config-opts": [
+        "--enable-shared",
+        "--disable-static"
+      ],
       "sources": [
         {
           "type": "archive",
@@ -57,8 +79,11 @@
     {
       "name": "libmediainfo",
       "subdir": "Project/GNU/Library",
-      "config-opts": [ "--enable-shared", "--disable-static", "--with-libcurl" ],
-      "cleanup": [ "/bin", "/include", "/lib/pkgconfig", "/lib/*.la" ],
+      "config-opts": [
+        "--enable-shared",
+        "--disable-static",
+        "--with-libcurl"
+      ],
       "sources": [
         {
           "type": "archive",
@@ -106,9 +131,9 @@
         }
       ],
       "post-install": [
-        "install -D -m 0644 ../GNU/GUI/mediaconch-gui.desktop /app/share/applications/mediaconch-gui.desktop",
+        "install -D -m 0644 ../GNU/GUI/mediaconch-gui.desktop -t /app/share/applications/",
         "install -D -m 0644 ../../Source/Resource/Image/MediaConch.png /app/share/icons/hicolor/256x256/apps/mediaconch.png",
-        "install -D -m 0644 ../../net.mediaarea.MediaConch.appdata.xml /app/share/appdata/net.mediaarea.MediaConch.appdata.xml"
+        "install -D -m 0644 ../../net.mediaarea.MediaConch.appdata.xml -t /app/share/metainfo/"
       ]
     }
   ]
